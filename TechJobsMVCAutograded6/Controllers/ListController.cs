@@ -53,7 +53,7 @@ public class ListController : Controller
         else
         {
             jobs = JobData.FindByColumnAndValue(column, value);
-            ViewBag.Title = $"{ColumnChoices[column]}: {value}";
+            ViewBag.Title = $"Jobs with {ColumnChoices[column]}: {value}";
 
         }
 
